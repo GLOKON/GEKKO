@@ -32,7 +32,7 @@ return array(
     | false [DEFAULT] => Disable new user registration
     */
 
-    'registration' => true,
+    'registration' => false,
 
     /*
     |--------------------------------------------------------------------------
