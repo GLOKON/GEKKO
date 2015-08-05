@@ -1,0 +1,51 @@
+{
+    "name": "glokon/gekko",
+    "description": "",
+    "keywords": [
+        "gekko", "url", "shortener", "laravel", "glokon"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/GLOKON/GEKKO/issues",
+        "source": "https://github.com/GLOKON/GEKKO"
+    },
+    "homepage": "http://gek.pw",
+    "authors": [
+        {
+            "name": "Daniel McAssey",
+            "email": "hello@glokon.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "illuminate/database": "*",
+        "illuminate/auth": "4.2.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "2.2.*",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.7.6"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/models",
+            "src/lang"
+        ],
+        "psr-4": {
+            "GLOKON\\GEKKO\\": "src/GLOKON/GEKKO/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GLOKON\\Tests\\GEKKO\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "stable"
+}
