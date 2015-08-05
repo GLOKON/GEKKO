@@ -1,4 +1,15 @@
-<?php namespace GLOKON\GEKKO;
+<?php
+
+/*
+ * This file is part of GEKKO URL Shortener
+ *
+ * (c) Daniel McAssey <hello@glokon.me>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace GLOKON\GEKKO;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -19,6 +30,9 @@ class GEKKOServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('glokon/gekko');
+
+		include __DIR__.'/../../filters.php';
+		include __DIR__.'/../../routes.php';
 	}
 
 	/**

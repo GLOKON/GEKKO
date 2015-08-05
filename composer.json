@@ -20,7 +20,9 @@
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
         "illuminate/database": "*",
-        "illuminate/auth": "4.2.*"
+        "illuminate/auth": "4.2.*",
+        "chrisbjr/api-guard": "~1.0",
+        "ceesvanegmond/minify": "2.0.*"
     },
     "require-dev": {
         "orchestra/testbench": "2.2.*",
@@ -30,6 +32,7 @@
     "autoload": {
         "classmap": [
             "src/migrations",
+            "src/controllers",
             "src/models",
             "src/lang"
         ],
